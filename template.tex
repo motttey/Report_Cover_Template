@@ -1,0 +1,100 @@
+\documentclass[a4j]{jsarticle}
+\usepackage{listings, jlisting}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{txfonts}
+\usepackage{accents}
+\usepackage{underscore}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{enumitem}
+\usepackage{url}
+%\usepackage{pdfpages}
+\usepackage{cite}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+%\usepackage{multicol}
+
+\setlength{\columnseprule}{0.4pt}
+
+\usepackage{listings, jlisting}
+\renewcommand{\lstlistingname}{リスト}
+\lstset{
+breaklines = true,
+basicstyle=\ttfamily\scriptsize,
+commentstyle=\textit,
+classoffset=1,
+keywordstyle=\bfseries,
+framesep=5pt,
+showstringspaces=false,
+numbers=left,
+stepnumber=1,
+numberstyle=\tiny,
+tabsize=2,
+frame=single,
+xleftmargin=3mm
+}
+% title margin
+\makeatletter
+\renewcommand{\@maketitle}{\newpage
+\begin{center}
+{\LARGE \@title \par} \vskip 1.5em {\large \lineskip .5em
+\begin{tabular}[t]{c}\@author
+\end{tabular}\par}
+\vskip 1em {\large \@date} \end{center}
+\par
+\vskip 1.5em}
+\makeatother
+
+\def\bm#1{\mbox{\boldmath $#1$}}
+
+\makeatletter
+\renewcommand{\paragraph}
+{\@startsection{paragraph}{4}{\z@}%
+{0.5\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+{-1pt}% 改行せず1zw のアキ
+{\normalfont\normalsize\headfont}
+}
+
+
+
+\begin{document}
+
+ \pagestyle{empty}
+
+\vspace*{\stretch{1}}
+
+\begin{center}
+\huge{\hspace{-360pt}[テーマ名]} \\
+\vspace{10pt}
+ \huge{\hspace{-360pt}実験レポート} \\
+ \vspace{10pt}
+ %\huge{\hspace{-180pt}(再提出)} \\
+\vspace{250pt}
+
+\end{center}
+\setlength{\oddsidemargin}{180pt}
+ \noindent
+ \large{ 実験日 : X月Y日、X月Y日、 X月Y日、X月Y日}\\
+ \large{ レポート提出日 : X月Y日}\\
+ %\hspace{180pt}
+ %\large{再提出日 : X月Y日}\\
+ \large{ 学修番号、氏名: xxxxxxxx Ringo Starr}\\
+ \large{ 班名 : N班}\\
+ \large{ 共同実験者 :  John Lennon}\\
+ \large{ \hspace{5.6zw} Paul McCartney}\\
+
+\vspace{\stretch{0.5}}
+
+
+ \pagebreak
+
+
+\newpage
+
+\setlength{\oddsidemargin}{0pt}
+
+\pagestyle{plain}
+   \setcounter{page}{1}
+
+%本文
+   
+\end{document}
